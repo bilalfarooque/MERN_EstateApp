@@ -31,8 +31,8 @@ const SearchBar = () => {
         </div>
         <form action="">
           <input type="text" name="location" placeholder="City/Location" />
-          <input type="number" name="minPrice" min={0} max={10000000} />
-          <input type="number" name="maxPrice" min={1} max={10000000} />
+          <input type="number" name="minPrice" min={0} max={10000000} placeholder="Min Price" />
+          <input type="number" name="maxPrice" min={1} max={10000000} placeholder="Max Price"/>
 
           <button>
             <img src="search.png" alt="search" />

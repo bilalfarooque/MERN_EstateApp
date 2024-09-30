@@ -1,4 +1,4 @@
-@import "./responsive.scss";
+@import "../../responsive.scss";
 
 .layout {
   height: 100vh;
@@ -20,8 +20,7 @@
     // background-color: rgb(177, 177, 236);
     max-width: 768px;
     padding-left: 20px;
-  padding-right: 20px;
-
+    padding-right: 20px;
   }
   @include sm {
     // background-color: rgb(232, 232, 188);
@@ -29,7 +28,6 @@
   }
 
   .content {
-    background-color: aliceblue;
     height: calc(100vh - 80px);
     // flex: 1;
   }

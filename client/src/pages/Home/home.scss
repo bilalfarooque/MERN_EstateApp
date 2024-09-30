@@ -1,10 +1,12 @@
 @import "../../responsive.scss";
+
 .homePage {
   display: flex;
   height: 100%;
 
   .textContainer {
     flex: 3;
+    
     .wrapper {
       padding-right: 100px;
       display: flex;
@@ -24,6 +26,7 @@
 
       @include sm {
         justify-content: flex-start;
+        padding-top: 20px;
       }
 
       .title {
