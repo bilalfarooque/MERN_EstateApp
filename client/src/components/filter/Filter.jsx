@@ -20,7 +20,7 @@ const Filter = () => {
       </div>
       <div className="bottom">
         <div className="item">
-          <label htmlFor="city">Type</label>
+          <label htmlFor="type">Type</label>
           <select name="type" id="type">
             <option value="">All</option>
             <option value="buy">Buy</option>

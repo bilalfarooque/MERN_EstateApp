@@ -5,6 +5,7 @@ import Filter from "../../components/filter/Filter.jsx";
 import Card from "../../components/card/Card.jsx";
 import Map from "../../components/map/Map.jsx";
 
+
 const ListPage = () => {
   const data = listData;
   return (
@@ -20,7 +21,7 @@ const ListPage = () => {
           </div>
         </div>
         <div className="mapContainer">
-          <Map />
+          <Map items={data} />
         </div>
       </div>
     </>

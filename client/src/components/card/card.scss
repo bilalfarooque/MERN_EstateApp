@@ -1,3 +1,5 @@
+@import "../../responsive.scss";
+
 .card {
   display: flex;
   gap: 20px;
@@ -5,9 +7,26 @@
   padding: 10px;
   border-radius: 5px;
 
+  @include sm{
+
+    flex-direction: column;
+}
+
+  
+
   .imgContainer {
     flex: 2;
     height: 200px;
+
+    @include sm{
+        height: 200px;
+        width: 280px;
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        margin: auto;
+    }
+
     img {
       width: 100%;
       height: 100%;
@@ -22,9 +41,14 @@
     flex-direction: column;
     justify-content: space-between;
     
+    @include sm{
+        gap: 10px !important;
+    }
+
     img {
       width: 16px;
       height: 16px;
+
     }
 
     .title {
@@ -32,6 +56,10 @@
       font-weight: 600;
       color: #444;
       transition: all 0.2s ease;
+
+      @include sm{
+     font-size: 18px;
+    }
 
       &:hover {
         color: #000;
@@ -65,6 +93,11 @@
         display: flex;
         gap: 20px;
         font-size: 14px;
+
+        @include sm{
+            font-size: 12px;
+            gap: 5px;
+        }
 
         .feature {
           display: flex;

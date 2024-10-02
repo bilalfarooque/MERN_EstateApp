@@ -1,9 +1,15 @@
+@import "../../responsive.scss";
+
 .listPage{
     display: flex;
     height: 100%;
 
     .listContainer{
         flex: 3;    
+
+        @include sm{
+            flex: 1;
+        }
         
         .wrapper{
             padding-right: 50px;
@@ -19,6 +25,11 @@
         background-color: #FCF5F3;
         flex: 2;
         height: 100%;
+
+        @include sm{
+            
+            display: none;
+        }
     }
 
 }

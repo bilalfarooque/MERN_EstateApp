@@ -7,4 +7,11 @@ export default defineConfig({
   server: {
     host: true, // Set this to true to listen on all interfaces
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler',
+      }
+    }
+  }
 })
