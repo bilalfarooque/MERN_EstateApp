@@ -1,2 +1,73 @@
 @import "../../responsive.scss";
 
+.slider{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    gap: 20px;
+
+    .fullSlider{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        display: flex;
+
+        .arrow{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+            
+                &.right{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .close{
+            position: absolute;
+            top: 10px;
+            right: 35px;
+            color: #fff;
+            font-size: 36px;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 20px;
+
+            &:hover{
+                color: #c23a3a;
+            }
+        }
+        .imgContainer{
+            flex: 10;
+        }
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .bigImage{
+        flex: 3;
+    }
+
+    .smallImages{
+        flex: 1;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
