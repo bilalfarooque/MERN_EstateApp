@@ -72,7 +72,7 @@ nav {
       display: none;
       
       img {
-        width: 30px;
+        width: 32px;
         cursor: pointer;
         &:hover {
           transform: scale(1.1);
@@ -82,6 +82,7 @@ nav {
       @include sm {
         z-index: 999;
         display: block;
+        margin-right: 10px;
       }
     }
     .menu {

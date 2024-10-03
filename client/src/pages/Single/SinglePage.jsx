@@ -72,11 +72,10 @@ const SinglePage = () => {
               <span>1 bathroom</span>
             </div>
           </div>
-          
 
           <p className="title">Nearby Places</p>
           <div className="listHorizontal">
-          <div className="feature">
+            <div className="feature">
               <img src="/school.png" alt="utility" />
               <div className="featureText">
                 <span>School</span>
@@ -100,16 +99,17 @@ const SinglePage = () => {
           </div>
           <p className="title">Location</p>
           <div className="mapContainer">
-            {/* <Map items={singlePostData} /> */}
+            <Map items={[singlePostData]} />
           </div>
           <div className="buttons">
             <button>
               <img src="/chat.png" alt="chat" />
-              Send a Message
+              <p>Send a Message</p>
             </button>
             <button>
               <img src="/save.png" alt="chat" />
-              Save this place
+
+              <p>Save this place</p>
             </button>
           </div>
         </div>
