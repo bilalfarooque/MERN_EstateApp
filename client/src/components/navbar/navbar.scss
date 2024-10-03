@@ -59,6 +59,24 @@ nav {
     background-color: #fcf5f3;
     gap: 50px;
 
+    .user{
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+
+      img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 30px;
+
+        @include sm{
+          margin-right: 0px;
+        }
+      }
+    }
+
     a {
       padding: 12px 24px;
       border-radius: 3px;
@@ -66,6 +84,34 @@ nav {
     .signup {
       background-color: #fece51;
       margin-right: 20px;
+    }
+    .profileText,.userName{
+      @include sm{
+          display: none;
+        }
+    }
+
+    .profile{
+      background-color: #fece51;
+      margin: 20px;
+      cursor: pointer;
+      border: none;
+      position: relative;
+      
+
+      .nofication{
+        position: absolute;
+        right: -8px;
+        top: -8px;
+        color: #fff;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
 
     .menuIcon {
