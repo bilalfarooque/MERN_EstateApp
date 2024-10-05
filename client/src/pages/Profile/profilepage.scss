@@ -5,6 +5,7 @@
     height: 100%;
 
     @include md{
+        margin-top: 20px;
         flex-direction: column;
         overflow-y: scroll;
     }
@@ -13,13 +14,24 @@
     .details{
         flex: 3;
         overflow-y: scroll;
+        height: 100%;
 
+        @include md{
+            flex: none;
+            height: 100%;
+        }
+
+        
         .wrapper{
             padding-right: 50px;
             display: flex;
             flex-direction: column;
             gap: 50px;
-
+            
+            @include md{
+                flex: 1;
+                 padding-right: 5px;
+            }
             .title{
                 display: flex;
                 justify-content: space-between;
@@ -87,6 +99,7 @@
 
         @include md{
          margin-top: 20px;
+        
         }
 
         .wrapper{
